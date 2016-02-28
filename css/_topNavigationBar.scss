@@ -7,27 +7,25 @@
   color: $text-color;
   @include border-radius(15px);
 
-  li{
+  li {
     display: inline-block;
     list-style: none;
     font: $text-top-menu;
-      a{
-        font: $text-top-menu;
-        color: $text-color;
-        display: block;
-        padding: 10px 16px;
-        text-decoration: none;
-      }
-
-      a:hover{
-        background-color: $hover-color;
-        @include border-radius(15px);
-      }
-
-      a.active{
-        @include border-radius(15px);
-      }
+    a {
+      font: $text-top-menu;
+      color: $text-color;
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none;
     }
 
+    a:hover {
+      background-color: $hover-color;
+      @include border-radius(15px);
+    }
 
+    a.active {
+      @include border-radius(15px);
+    }
+  }
 }

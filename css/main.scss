@@ -48,6 +48,15 @@
 
 */
 
+/*
+  TODO:
+        - left nav manu: background color extend to footer
+        - basket ikon responsive design
+        - logo, logo buttons: make with responsive design
+        - colors, variables: choose
+
+*/
+
 //import variables
 @import "variables";
 @import "functions";
@@ -75,7 +84,7 @@ header, section, footer, aside, nav, article{
 html, body{
   text-align: center;
   background: silver;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   display: -webkit-box;
   -webkit-box-pack: center;
@@ -97,7 +106,7 @@ html, body{
 
 #content{
   min-height: 100%;
-  overflow: hidden;
+  //overflow: auto;
 }
 
 section{

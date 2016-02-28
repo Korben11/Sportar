@@ -2,6 +2,8 @@
 
 #mainContent{
   min-height: 500px;
+  height: auto;
   float: left;
   width: $widthMainContent;
+  //overflow: auto;
 }
