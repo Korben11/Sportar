@@ -1,0 +1,20 @@
+// file with mixins (functions)
+
+@mixin bg-opacity($op){
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$op)";       /* IE 8 */
+  filter: alpha(opacity=$op);  /* IE 5-7 */
+  -moz-opacity: $op;          /* Netscape */
+  -khtml-opacity: $op;        /* Safari 1.x */
+  opacity: $op;               /* Good browsers */
+}
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.active{
+  background: $hover-color;
+}

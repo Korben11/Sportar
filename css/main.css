@@ -1,0 +1,199 @@
+/*
+    my scss manual
+
+    $variableName: green    - define variables
+    color: $variableName    - using variables
+
+    scss into different files:
+        - '_' simbol means you are gonna include this in another scss file
+        - '_profile.scss' here will be style code for profile
+        - to include new file in main css file we need to type '@import"profile";'
+
+    inheritance:
+        - '@extend .elementStyle'
+        - example:
+            .panel{
+              border: 3px solid dodgerblue;
+              background: lightgreen;
+              margin: 10px;
+            }
+
+            .little-panel{
+              @extend .panel;
+            }
+
+    ged rid of repetitive code: mixins
+      - '@mixin'
+      - example:
+        @mixin border-radius($radius){
+          -webkit-border-radius: $radius;
+          -moz-border-radius: $radius;
+          -ms-border-radius: $radius;
+          border-radius: $radius;
+        }
+
+        .big-panel{
+          @include border-radius(5px);
+        }
+
+    Operations:
+      example:
+        $padding: 5px;
+        $background: #16A085;
+
+        padding: $padding + 30;           // add 30px to variable $padding
+        background: $background * 1.5;    // makes lighter bacground color,
+                                          // if multiply by less ten 1 makes it darker
+
+
+*/
+.active {
+  background: #16a085; }
+
+#logo {
+  background-image: url("../gallery/logo/logo.png");
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  #logo #header_logIn_panel {
+    display: block;
+    float: right;
+    width: 10%;
+    min-width: 100px;
+    height: inherit; }
+    #logo #header_logIn_panel nav {
+      height: inherit;
+      display: block; }
+      #logo #header_logIn_panel nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+      #logo #header_logIn_panel nav li a {
+        width: inherit;
+        background-color: #2c3e50;
+        color: #cacaca;
+        display: block;
+        padding: 10px 16px;
+        text-decoration: none; }
+      #logo #header_logIn_panel nav li a:hover {
+        background: #16a085; }
+      #logo #header_logIn_panel nav li #basket {
+        float: right;
+        bottom: 0;
+        margin-top: 25px;
+        width: 50px;
+        height: 50px;
+        background-image: url("../gallery/logo/basket.png");
+        background-color: transparent;
+        background-size: 100% 100%; }
+
+.active {
+  background: #16a085; }
+
+#topNavBar {
+  clear: both;
+  background: #2c3e50;
+  color: #cacaca;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px; }
+  #topNavBar li {
+    display: inline-block;
+    list-style: none;
+    font: bold 14px Tahoma; }
+    #topNavBar li a {
+      font: bold 14px Tahoma;
+      color: #cacaca;
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none; }
+    #topNavBar li a:hover {
+      background-color: #16a085;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px; }
+    #topNavBar li a.active {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px; }
+
+#leftSideNavBar {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background: #2c3e50;
+  opacity: 0.8;
+  overflow: hidden; }
+  #leftSideNavBar nav ul {
+    list-style: none; }
+  #leftSideNavBar nav li {
+    display: block;
+    list-style: none; }
+    #leftSideNavBar nav li a {
+      font: bold 14px Tahoma;
+      color: #cacaca;
+      display: block;
+      padding: 10px 16px;
+      text-decoration: none; }
+    #leftSideNavBar nav li a:hover {
+      background-color: #12806a; }
+
+#mainContent {
+  min-height: 500px;
+  float: left;
+  width: 80%; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+h1 {
+  font-family: "Script MT Bold";
+  font-style: italic; }
+
+header, section, footer, aside, nav, article {
+  display: block; }
+
+html, body {
+  text-align: center;
+  background: silver;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: center; }
+
+#page_wrapper {
+  overflow: hidden;
+  border: none;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+  min-height: 100%;
+  position: relative;
+  background-color: white;
+  box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8); }
+
+#content {
+  min-height: 100%;
+  overflow: hidden; }
+
+section {
+  padding-bottom: 100px; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  clear: both;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  background: #2c3e50;
+  color: #cacaca;
+  width: 100%;
+  height: 2%; }
+
+/*# sourceMappingURL=main.css.map */

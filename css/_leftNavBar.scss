@@ -1,0 +1,35 @@
+@import "variables";
+
+// want to make this fill content to bottom with bg transparent color
+
+#leftSideNavBar{
+  float: left;
+  width: $widthLeftNavBar;
+  height: 100%;
+  background: $bg-color;
+  opacity: 0.8;
+  overflow: hidden;
+
+
+  nav{
+    ul{
+      list-style: none;
+    }
+    li{
+      display: block;
+      list-style: none;
+      a{
+        font: $text-side-menu;
+        color: $text-color;
+        display: block;
+        padding: 10px 16px;
+        text-decoration: none;
+      }
+
+      a:hover{
+        background-color: $hover-color * 0.8;
+      }
+
+    }
+  }
+}

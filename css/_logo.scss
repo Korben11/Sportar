@@ -1,0 +1,53 @@
+@import "variables";
+
+#logo{
+  background-image: $logo;
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  #header_logIn_panel {
+    display: block;
+    float: right;
+    width: 10%;
+    min-width: 100px;
+    height: inherit;
+    nav {
+      height: inherit;
+      display: block;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        a {
+          width: inherit;
+          background-color: $bg-color;
+          color: $text-color;
+          display: block;
+          padding: 10px 16px;
+          text-decoration: none;
+        }
+
+        a:hover {
+          background: $hover-color;
+        }
+
+        #basket{
+          float: right;
+          bottom: 0;
+          margin-top: 25px;
+          width: 50px;
+          height: 50px;
+          background-image: $basket;
+          background-color: transparent;
+          background-size: 100% 100%;
+        }
+
+      }
+
+    }
+  }
+}
