@@ -155,6 +155,19 @@
   height: auto;
   float: left;
   width: 80%; }
+  #mainContent article {
+    width: 100%; }
+    #mainContent article iframe {
+      max-width: 80%; }
+
+.active {
+  background: #16a085; }
+
+#brands {
+  width: 100%; }
+  #brands img {
+    width: 30%;
+    margin: 10px; }
 
 * {
   margin: 0px;
@@ -162,7 +175,9 @@
 
 h1 {
   font-family: "Script MT Bold";
-  font-style: italic; }
+  font-style: italic;
+  font-size: x-large;
+  padding: 20px; }
 
 header, section, footer, aside, nav, article {
   display: block; }
@@ -203,5 +218,15 @@ footer {
   color: #cacaca;
   width: 100%;
   height: 2%; }
+
+.classItem img {
+  float: right;
+  height: 180px;
+  width: 135px;
+  margin: 5px;
+  border: 1px solid grey; }
+
+.classItem img:hover {
+  border: 1px solid red; }
 
 /*# sourceMappingURL=main.css.map */

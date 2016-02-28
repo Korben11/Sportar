@@ -64,6 +64,7 @@
 @import "topNavigationBar";
 @import "leftNavBar";
 @import "mainContent";
+@import "topBrands";
 
 // set up default walues for page
 //set up margins and padding to 0 for everything
@@ -75,6 +76,8 @@
 h1{
   font-family: "Script MT Bold";
   font-style: italic;
+  font-size: x-large;
+  padding: 20px;
 }
 
 // need take all html5 elemets and make sure will display as block elements, for compatibility with all browsers
@@ -124,4 +127,18 @@ footer{
   color: $text-color;
   width: 100%;
   height: 2%;
+}
+
+// move to better place
+
+.classItem img {
+  float:right;
+  height:180px;
+  width:135px;
+  margin:5px;
+  border:1px solid grey;
+}
+
+.classItem img:hover{
+  border:1px solid red;
 }
