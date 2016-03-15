@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sportar</title>
+    <!-- set up used character set -->
+    <meta charset="utf-8" />
+    <!--main css file -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/Linh's%20css.css">
+
+
+</head>
+
+<body>
+    <div id="page_wrapper">
+        <!-- logo + logIn, registrate and basket buttons -->
+        <header id="logo">
+            <!-- logo will be set up as backround of header (will be 100% wide and auto height) -->
+            <!--<img src="gallery/logo/logo.png" width="100%">-->
+
+            <aside id="header_logIn_panel">
+                <nav id="login_menu">
+                    <ul>
+                        <li>
+                            <a href="login.html">LogIn</a>
+                        </li>
+                        <li>
+                            <a href="register.html">Register</a>
+                        </li>
+                        <li>
+                            <a id="basket" href="basket.html"></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </aside>
+        </header>
+
+        <!-- Top navigation bar -->
+        <nav id="topNavBar">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="visit.html">Visit</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <!-- side bar navigation menu -->
+            <aside id="leftSideNavBar">
+                <nav>
+                    <ul>
+                        <li><a href="basketball.html">Basketball</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="bicycle.html">Bicycle</a></li>
+                        <li><a href="basketball.html">Basketball</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="bicycle.html">Bicycle</a></li>
+                        <li><a href="basketball.html">Basketball</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- content - all important stuff -->
+            <section id="mainContent">
+
+                <!--    Article tag - group of similar information -->
+                <!--    game    -->
+                <article>
+                    <header>
+                        <h1>Pressed key: <span id="buttonDown"></span></h1>
+                    </header>
+
+                    <canvas id="main_canvas" height="300" width="400" display="block"></canvas>
+                </article>
+            </section>
+        </div>
+        <footer>Copyright © Sportar shop online.</footer>
+    </div>
+    <script type="text/javascript" src="ball.js"></script>
+    <script type="text/javascript" src="defender.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>
