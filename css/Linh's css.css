@@ -1,4 +1,4 @@
-.unlisted li {
+.unlisted li{
     list-style:circle;
     margin-left: 20px;
 } 
@@ -9,4 +9,9 @@ p{
 
 dd{
     margin-left: 20px;
+}
+body{
+    background-image:url(background.jpg);
+    background-size:cover;
+       
 }
