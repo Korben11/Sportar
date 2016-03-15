@@ -1,4 +1,4 @@
-.unlisted li {
+.unlisted li{
     list-style:circle;
     margin-left: 20px;
 } 
@@ -11,6 +11,7 @@ dd{
     margin-left: 20px;
 }
 body{
-    background-image:url(background.jpg)
-        
+    background-image:url(background.jpg);
+    background-size:cover;
+       
 }

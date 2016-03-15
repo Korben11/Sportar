@@ -191,7 +191,7 @@ html, body {
   display: -webkit-box;
   -webkit-box-pack: center; }
 
-#page_wrapper {
+#page_wrapper {    
   overflow: hidden;
   border: none;
   width: 70%;
