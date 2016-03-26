@@ -1,7 +1,8 @@
 <?php
 
-    $current_page='home';
+    $current_page='about';
 
 require '/templates/mainTemplate.php';
 
 ?>
+	

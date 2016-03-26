@@ -1,6 +1,6 @@
 <?php
 
-    $current_page='home';
+    $current_page='shop';
 
 require '/templates/mainTemplate.php';
 

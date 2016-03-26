@@ -1,10 +1,10 @@
 <!-- Top navigation bar -->
 <nav id="topNavBar">
     <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="visit.html">Visit</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="About.html">About</a></li>
+        <li><a <?php if ($current_page=="home" ) { echo 'class="active"' ; }?> href="index.php">Home</a></li>
+        <li><a <?php if ($current_page=="shop" ) { echo 'class="active"' ; }?> href="shop.php">Shop</a></li>
+        <li><a <?php if ($current_page=="visit" ) { echo 'class="active"' ; }?> href="visit.php">Visit</a></li>
+        <li><a <?php if ($current_page=="contact" ) { echo 'class="active"' ; }?> href="contact.php">Contact</a></li>
+        <li><a <?php if ($current_page=="about" ) { echo 'class="active"' ; }?> href="about.php">About</a></li>
     </ul>
 </nav>
