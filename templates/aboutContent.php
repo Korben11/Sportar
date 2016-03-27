@@ -1,3 +1,5 @@
+<article>
+    
 <h1>Welcome to SPORTA - The online sport shop (student version)</h1>
      <section style="float:left; width:80%; border: groove; margin:2px; padding:5px">
             
@@ -24,3 +26,4 @@
             
             
         </section>
+</article>

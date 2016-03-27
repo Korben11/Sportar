@@ -7,8 +7,8 @@
   width: $widthMainContent;
   //overflow: auto;
   article{
-    width: 100%;
-
+    max-width: 100%;
+    padding: $main-content-padding;
     iframe{
       max-width: 80%;
     }

@@ -73,12 +73,11 @@
   padding: 0px;
 }
 
-h1{
-  font-family: "Script MT Bold";
-  font-style: italic;
-  font-size: x-large;
-  padding: 20px;
-}
+h1 { font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 40px; font-weight: bold; }
+
+h2 { color: #333; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 300; line-height: 32px; margin: 0 0 14px; }
+
+p { color: #222; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 14px;}
 
 // need take all html5 elemets and make sure will display as block elements, for compatibility with all browsers
 header, section, footer, aside, nav, article{

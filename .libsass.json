@@ -1,0 +1,12 @@
+{
+    "output": {
+        "dir": "css",
+        "structure": "flat"
+    },
+    "compile": {
+        "line-comments": true,
+        "line-numbers":  true,
+        "style":         "nested", 
+        //"load-path":     "/path/to/projects/example/styles" // You DO NOT need this line
+    }
+}

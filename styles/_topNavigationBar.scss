@@ -5,7 +5,7 @@
   clear: both;     // set this element layout under any previous
   background: $bg-color;
   color: $text-color;
-  @include border-radius(15px);
+  // @include border-radius(15px);
 
   li {
     display: inline-block;

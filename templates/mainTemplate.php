@@ -10,8 +10,7 @@ require '/php/phpFunctions.php';
         <!-- set up used character set -->
         <meta charset="utf-8" />
         <!--main css file -->
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/Linh's%20css.css">
+        <?php require '/templates/cssRes.php' ?>
 
     </head>
 
