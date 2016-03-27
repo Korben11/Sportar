@@ -7,7 +7,7 @@
   <h2>Ask your question here or call us on: +50 (0)46481321846</h2>
   <div id="form-main">
     <div id="form-div">
-      <form class="form" id="form1">
+      <form class="form" id="formContact">
         
         <p class="name">
           <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />

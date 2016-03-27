@@ -215,18 +215,36 @@ html, body {
   background-color: white;
   box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8); }
 
-@media screen and (max-width: 499px) {
+@media only screen and (max-device-width: 499px) {
   #page_wrapper {
     width: 100%; }
 
   #logo {
     background-size: 70% auto; } }
-@media screen and (max-width: 699px) and (min-width: 500px) {
+@media handheld {
+  #page_wrapper {
+    width: 100%; }
+
+  #logo {
+    background-size: 70% auto; } }
+@media screen and (max-width: 499px), only screen and (max-device-width: 499px) {
+  #page_wrapper {
+    width: 100%; }
+
+  #logo {
+    background-size: 70% auto; } }
+@media screen and (max-width: 699px) and (min-width: 500px), only screen and (max-device-width: 699px) {
   #page_wrapper {
     width: 100%; } }
 @media screen and (max-width: 1000px) and (min-width: 700px) {
   #page_wrapper {
-    width: 85%; } }
+    width: 100%; } }
+@media handheld {
+  #page_wrapper {
+    width: 100%; }
+
+  #logo {
+    background-size: 70% auto; } }
 #content {
   min-height: 100%;
   max-width: 100%; }

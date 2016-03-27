@@ -39,7 +39,7 @@ require '/php/phpFunctions.php';
         </div>
 
 
-        <script type="text/javascript" src="store.js"></script>
+        <?php require '/templates/scriptRes.php' ?>
     </body>
 
     </html>
