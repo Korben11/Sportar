@@ -103,7 +103,18 @@ html, body{
   background-color: white;
   // page side shadows
   box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+}
 
+@media screen and (max-width: 699px){
+    #page_wrapper {
+        width: $widthPageSSize;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    #page_wrapper {
+        width: 85%;
+    }
 }
 
 #content{
