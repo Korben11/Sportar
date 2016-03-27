@@ -90,8 +90,8 @@
         float: right;
         bottom: 0;
         margin-top: 25px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-image: url("../gallery/logo/basket.png");
         background-color: transparent;
         background-size: 100% 100%; }
@@ -215,7 +215,13 @@ html, body {
   background-color: white;
   box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8); }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 499px) {
+  #page_wrapper {
+    width: 100%; }
+
+  #logo {
+    background-size: 70% auto; } }
+@media screen and (max-width: 699px) and (min-width: 500px) {
   #page_wrapper {
     width: 100%; } }
 @media screen and (max-width: 1000px) and (min-width: 700px) {
