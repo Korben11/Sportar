@@ -7,10 +7,10 @@
   <h2>Ask your question here or call us on: +50 (0)46481321846</h2>
   <div id="form-main">
     <div id="form-div">
-      <form name="formContact" action="#" class="form" id="formContact" onSubmit="validateContactForm(); return false;" method="POST">
+      <form name="formContact" class="form" id="formContact" onSubmit="validateContactForm();" action="MAILTO:jkorbacka@gmail.com" method="post" enctype="text/plain">
         
         <p class="name">
-          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name"  onblur="validateName(this.value);" />
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" onblur="validateName(this.value);" />
         </p>
         
         <p class="email">
@@ -23,10 +23,12 @@
         
         
         <div class="submit">
-          <input type="submit" value="submit" id="button-blue"/>
+          <input type="submit" value="Submit" id="button-blue"/>
           <div class="ease"></div>
         </div>
       </form>
     </div>
   </div>
 </article>
+
+<!-- <form name="formContact" class="form" id="formContact" onSubmit="validateContactForm(); return false;"> -->

@@ -193,6 +193,13 @@ p {
   line-height: 24px;
   margin: 0 0 14px; }
 
+ul, li, dd {
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px; }
+
 header, section, footer, aside, nav, article {
   display: block; }
 
