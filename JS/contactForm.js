@@ -8,6 +8,18 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+function validateString(str, id) {
+	if(str==null||str==""){
+		inputColor(id, false);
+		return false;
+	} else {
+		inputColor(id, true);
+		return true;
+	}
+	  
+}
+
+/*
 function validateName(name) {
 	if(name==null||name==""){
 		inputColor("#name", false);
@@ -28,7 +40,7 @@ function validateComment(comment) {
 		return true;
 	}
 }
-
+*/
 function inputColor(className, res) {
 	if(res){
     	$(className).css("color", "#3c3c3c");

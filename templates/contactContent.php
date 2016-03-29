@@ -10,15 +10,15 @@
       <form name="formContact" class="form" id="formContact" onSubmit="validateContactForm();" action="MAILTO:jkorbacka@gmail.com" method="post" enctype="text/plain">
         
         <p class="name">
-          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" onblur="validateName(this.value);" />
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" onblur="validateString(this.value, '#name');" />
         </p>
         
         <p class="email">
-          <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" onblur="validateEmail(this.value);" />
+          <input required name="email" type="email" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" onblur="validateEmail(this.value);" />
         </p>
         
         <p class="text">
-          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment" onblur="validateComment(this.value);"></textarea>
+          <textarea required name="text" type="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment" onblur="validateString(this.value, '#comment');"></textarea>
         </p>
         
         

@@ -9,6 +9,8 @@ require '/php/phpFunctions.php';
         <title>Sportar</title>
         <!-- set up used character set -->
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!--main css file -->
         <?php require '/templates/cssRes.php' ?>
 
