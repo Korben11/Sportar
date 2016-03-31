@@ -19,28 +19,6 @@ function validateString(str, id) {
 	  
 }
 
-/*
-function validateName(name) {
-	if(name==null||name==""){
-		inputColor("#name", false);
-		return false;
-	} else {
-		inputColor("#name", true);
-		return true;
-	}
-	
-}
-
-function validateComment(comment) {
-	if(comment==null||comment==""){
-		inputColor("#comment", false);
-		return false;
-	} else {
-		inputColor("#comment", true);
-		return true;
-	}
-}
-*/
 function inputColor(className, res) {
 	if(res){
     	$(className).css("color", "#3c3c3c");

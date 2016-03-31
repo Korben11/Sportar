@@ -1,5 +1,7 @@
 <?php
+require '/php/session.php';
 require '/php/phpFunctions.php';
+
 ?>
 
 <!DOCTYPE html>

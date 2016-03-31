@@ -7,7 +7,7 @@
   <h2>Ask your question here or call us on: +50 (0)46481321846</h2>
   <div id="form-main">
     <div id="form-div">
-      <form name="formContact" class="form" id="formContact" onSubmit="validateContactForm();" action="MAILTO:jkorbacka@gmail.com" method="post" enctype="text/plain">
+      <form name="formContact" action="php/sendQuestion.php" class="form" id="formContact" onSubmit="validateContactForm();" action="MAILTO:fasklj@gmail.com" method="POST" enctype="multipart/form-data">
         
         <p class="name">
           <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" onblur="validateString(this.value, '#name');" />
@@ -18,7 +18,7 @@
         </p>
         
         <p class="text">
-          <textarea required name="text" type="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment" onblur="validateString(this.value, '#comment');"></textarea>
+          <textarea required name="comment" type="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment" onblur="validateString(this.value, '#comment');"></textarea>
         </p>
         
         

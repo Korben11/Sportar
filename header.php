@@ -9,13 +9,8 @@
         <ul>
             <!-- inser more links here -->
             <?php
-                if(session_status() == PHP_SESSION_ACTIVE){
-                    if($_SESSION['loggedin'] == true){
-                        echo '<li><a href="#0">'.$_SESSION['email'] .'</a></li><li><a href="stopSession.php">Logout</a></li>';
-                    }else{
-                        echo '<li><a class="cd-signin" href="#0">Log in</a></li><li><a class="cd-signup" href="#0">Sign up</a></li>';
-                    }
-                }
+                echo '<li><a class="cd-signin" href="#0">Log in</a></li><li><a class="cd-signup" href="#0">Sign up</a></li>';
+                echo '<li><a onclick="stopSession();">'.$_SESSION['email'] .'</a></li><li><a href="#0">Logout</a></li>';
             ?>
         </ul>
     </nav>
